@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hostnameapp-manual
+spec:
+  containers:
+    - image: malcolmkee/hostname
+      name:  hostname
+      ports:
+        - containerPort: 8080
+          protocol: TCP
